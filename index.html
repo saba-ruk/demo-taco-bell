@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="/logo/logo-new.png">
+        <ul>
+            <a href=""><li>ORDER NOW</li></a>
+            <a href=""><li>OUR FOOD</li></a>
+            <a href=""><li>FIND US</li></a>
+            <a href=""><li>NUTRITION</li></a>
+            <a href=""><li>ABOUT US</li></a>
+            <a href=""><li>WHAT'S NEW</li></a>
+            <a href=""><li>MORE +</li></a>
+        </ul>
+    </nav>
+
+    <section id="section1">
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="/gallery/img1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="/gallery/img2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="/gallery/img3.jpg" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+    </section>
+
+
+    <section id="section2">
+      <div class="menu-heading">
+        <span class="char1">O</span>
+        <span class="char2">U</span>
+        <span class="char3">R</span>
+        <span class="char4">M</span>
+        <span class="char5">E</span>
+        <span class="char6">N</span>
+        <span class="char7">U</span>
+        <h3>The Line-Up</h3>
+      </div>
+
+
+      <div class="menu-cards">
+
+        <div class="card">
+          <img src="/Menu/Tacos.jpg" class="dish">
+          <div class="align">
+            <img src="/Menu Logo/icons8-tacos-64.png">
+            <p>Tacos</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/Menu/Burritos-n.jpg" class="dish">
+         <div class="align">
+          <img src="/Menu Logo/icons8-burrito-64.png">
+          <p>Burritos & Bowls</p>
+         </div>
+        </div>
+
+        <div class="card">
+          <img src="/Menu/Quessadilla-n.jpg" class="dish">
+          <div class="align">
+            <img src="/Menu Logo/icons8-quesadilla-50.png">
+            <p>Quesadilla</p>
+           </div>
+        </div>
+
+        <div class="card">
+          <img src="/Menu/Shareables-new.jpg" class="dish">
+          <div class="align">
+            <img src="/Menu Logo/icons8-cardboard-box-50.png">
+            <p>Shareables</p>
+           </div>
+        </div>
+
+        <div class="card">
+          <img src="/Menu/Best-of-Bell-n.jpg" class="dish">
+          <div class="align">
+            <img src="/Menu Logo/icons8-box-tissue-50.png">
+            <p>Cravings Value</p>
+           </div>
+        </div>
+
+        <div class="card">
+          <img src="/Menu/Sides-n.jpg" class="dish">
+          <div class="align">
+            <img src="/Menu Logo/icons8-nachos-50.png">
+            <p>Sides</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+      <!--image section1 slider end-->
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+</body>
+</html>
